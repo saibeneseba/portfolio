@@ -1,10 +1,13 @@
-export default function HomePage() {
+import { Hero } from "@/components/hero";
+import { About } from "@/components/about";
+import { Projects } from "@/components/projects";
+
+export default function Home() {
   return (
-    <main className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold">Sebastián Saibene</h1>
-      <p className="mt-4 text-muted-foreground">
-        Full Stack Developer Jr — En construcción
-      </p>
+    <main>
+      <Hero />
+      <About />
+      <Projects />
     </main>
   );
 }
