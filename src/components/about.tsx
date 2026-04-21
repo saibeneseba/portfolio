@@ -65,7 +65,7 @@ export function About() {
               Sobre mí
             </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Un poco sobre mí
+                De gestión a código
               </h2>
           </div>
 
