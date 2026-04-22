@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Code2 } from "lucide-react";
 
