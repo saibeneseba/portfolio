@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
-import "./globals.css";
 import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  // ... tus metadatos
+};
 
 export default function RootLayout({
   children,
@@ -8,11 +21,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" className={inter.variable} suppressHydrationWarning>
       <body>
-        <Navbar />
-        {children}
-      <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
