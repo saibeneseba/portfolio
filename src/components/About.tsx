@@ -64,20 +64,19 @@ export function About() {
             <p className="text-sm font-medium text-primary tracking-widest uppercase mb-3">
               Sobre mí
             </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                De gestión a código
-              </h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+              De gestión a código
+            </h2>
           </div>
 
           {/* Historia */}
           <div className="space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed mb-16 max-w-3xl mx-auto">
             <p>
-              Después de 7+ años en roles de gestión y análisis de datos, decidí
-              dedicarme 100% al desarrollo. Completé el{" "}
+              En 2023 decidí dedicarme 100% al desarrollo y completé el{" "}
               <span className="text-foreground font-medium">
                 Certified Tech Developer de Digital House
               </span>{" "}
-              (1.568 horas, respaldado por Globant y Mercado Libre) y hoy
+              (1.568 horas, respaldado por Globant y Mercado Libre). Hoy
               construyo productos web full stack con foco en Frontend.
             </p>
             <p>
